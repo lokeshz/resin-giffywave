@@ -20,7 +20,7 @@ rm /tmp/.X0-lock &>/dev/null || true
 
 if [ ! -c /dev/fb1 ]; then
   modprobe spi-bcm2708 || true
-  modprobe fbtft_device name=pitft verbose=0 rotate=$TFT_ROTATE || true
+  modprobe fbtft_device name=pitft verbose=0 rotate=90 || true
 
   sleep 1
 
