@@ -14,8 +14,8 @@ let mainWindow;
 function createWindow() {
     // Create the browser window.
     mainWindow = new BrowserWindow({
-        width: 480,
-        height: 800
+        width: 800,
+        height: 480
     });
 
     // and load the index.html of the app.
@@ -25,7 +25,7 @@ function createWindow() {
         slashes: true
     }));
 
-    mainWindow.setFullScreen(true);
+    //mainWindow.setFullScreen(true);
     // Open the DevTools.
     // mainWindow.webContents.openDevTools()
 
