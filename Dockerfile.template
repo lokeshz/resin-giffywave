@@ -5,8 +5,6 @@ RUN sed -i "s!httpredir.debian.org!`curl -s -D - http://httpredir.debian.org/dem
 
 COPY debian-pinning /etc/apt/preferences.d/
 
-COPY config.txt /boot
-
 # Install other apt deps
 RUN apt-get update && apt-get install -y \
   apt-utils \
@@ -30,6 +28,7 @@ RUN apt-get update && apt-get install -y \
   libsmbclient \
   libssh-4 \
   fbset \
+  xinput \
   libexpat-dev && rm -rf /var/lib/apt/lists/*
 
 # Set Xorg and FLUXBOX preferences
