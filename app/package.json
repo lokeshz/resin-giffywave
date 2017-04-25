@@ -34,9 +34,10 @@
     "angular-aria": "^1.6.4",
     "angular-material": "^1.1.4",
     "angular-route": "^1.6.4",
-    "jquery": "^3.2.1",
-    "material-design-icons-iconfont": "^3.0.3",
+    "angular-touch": "^1.6.4",
     "electron": "^1.4.15",
-    "electron-rebuild": "^1.5.7"
+    "electron-rebuild": "^1.5.7",
+    "jquery": "^3.2.1",
+    "material-design-icons-iconfont": "^3.0.3"
   }
 }

@@ -1,5 +1,6 @@
 angular.module('app',
 [
+  "ngTouch",
   "ngAnimate",
   "ngAria",
   "ngMaterial",
