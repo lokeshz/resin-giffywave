@@ -1,29 +1,31 @@
 {
-  "name": "simple-server-node",
+  "name": "electron-quick-start",
   "version": "1.0.0",
-  "description": "A simple Expressjs Web server on resin.io",
-  "main": "server.js",
+  "description": "A minimal Electron application",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "electron ."
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/resin-io-projects/simple-server-node.git"
-  },
+  "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
-    "resin.io",
-    "webserver",
-    "nodejs",
-    "expressjs"
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
   ],
-  "author": "Shaun Mulligan <shaun@resin.io>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/resin-io-projects/simple-server-node/issues"
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "~1.6.2"
   },
-  "homepage": "https://github.com/resin-io-projects/simple-server-node#readme",
   "dependencies": {
-    "express": "*"
+    "angular": "^1.6.4",
+    "angular-animate": "^1.6.4",
+    "angular-aria": "^1.6.4",
+    "angular-material": "^1.1.4",
+    "angular-route": "^1.6.4",
+    "jquery": "^3.2.1",
+    "material-design-icons-iconfont": "^3.0.3"
   }
 }
