@@ -25,7 +25,7 @@ function createWindow() {
         slashes: true
     }));
 
-    //mainWindow.setFullScreen(true);
+    mainWindow.setFullScreen(true);
     // Open the DevTools.
     // mainWindow.webContents.openDevTools()
 
