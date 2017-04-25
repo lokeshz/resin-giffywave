@@ -49,16 +49,9 @@ function createWindow() {
         }
     });
 
-    window.webContents.on('did-finish-load', () => {
-        setTimeout(() => {
-            window.show();
-        }, 300);
-
-    });
-
     if (electronConfig.URL_LAUNCHER_CONSOLE) {
-               window.openDevTools();
-           }
+        window.openDevTools();
+    }
     // mainWindow.setMenu(null);
     // and load the index.html of the app.
     mainWindow.loadURL(url.format({
