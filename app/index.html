@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <!-- meta stuff -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1" />
+    <!-- Angular MaterialUI -->
+    <link rel="stylesheet" type="text/css" href="node_modules/angular-material/angular-material.css">
+    <!-- Angular Material Deisgn Icons -->
+    <link rel="stylesheet" type="text/css" href="node_modules/material-design-icons-iconfont/dist/material-design-icons.css">
+    <!-- Mozilla Fira font : change to whatever you'd like in the root index.css -->
+    <!-- <link rel="stylesheet" type="text/css" href="node_modules/fira-compact/fira.css"> -->
+    <!-- Custom CSS for your specific app -->
+    <link rel="stylesheet" type="text/css" href="client/css/app.css">
+    <!-- Main index.css stylesheet (Electron) -->
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <!-- A title -->
+    <title>Giffywave</title>
+</head>
+
+<!-- MainController binds body tag scope -->
+<body layout="column" ng-controller="MainController">
+    <!-- Include header : found in client/tpl folder -->
+    <!-- <div ng-include="'client/tpl/header.html'"></div> -->
+
+    <!-- Main ng-view layout with MaterialUI -->
+    <!-- This is where your content shows up when routes change. -->
+    <!-- You probably should'nt edit this this until you're ready. :) -->
+    <div layout="column" id="content" flex>
+      <ng-view layout="column" class="md-paddding" flex></ng-view>
+    </div>
+
+    <!-- Inject jQuery into some namespaces. -->
+    <script>
+    window.$ = window.jQuery = require('./node_modules/jquery/dist/jquery.min');
+    </script>
+
+    <!-- AngularJS -->
+    <script type="text/javascript" src="node_modules/angular/angular.js"></script>
+    <script type="text/javascript" src="node_modules/angular-route/angular-route.js"></script>
+    <script type="text/javascript" src="node_modules/angular-animate/angular-animate.js"></script>
+    <script type="text/javascript" src="node_modules/angular-aria/angular-aria.js"></script>
+    <script type="text/javascript" src="node_modules/angular-material/angular-material.js"></script>
+
+    <!-- AngularJS app js entry point -->
+    <script type="text/javascript" src="client/js/app.js"></script>
+    <script type="text/javascript" src="client/js/routes.js"></script>
+    <script type="text/javascript" src="client/js/controllers.js"></script>
+    <script type="text/javascript" src="client/js/directives.js"></script>
+    <script type="text/javascript" src="client/js/services.js"></script>
+
+    <!-- For Electron and AngularJS connectivity -->
+    <!-- <script type="text/javascript" src="client/lib/ng-electron/ng-electron.js"></script> -->
+
+</body><!-- MainController -->
+</html>
